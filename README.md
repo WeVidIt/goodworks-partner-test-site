@@ -8,7 +8,8 @@ Nothing here is a real club. It is plain HTML and CSS with no build step, no fra
 
 ## What is on the page
 
-- One film, No Limbs No Limits: The Nick V Story, with a Good Works widget in the small-card style that opens the purchase window. The title goes on sale November 10, 2026, and until then the card says it is not available.
+- No Limbs No Limits: The Nick V Story, with a Good Works widget in the small-card style that opens the purchase window. The title goes on sale November 10, 2026, and until then the card says it is not available.
+- 2025 Persimmon RD2 B9, a single episode of the GoThrow series, with its own widget that offers Rent and Buy at the episode's own low prices.
 - A short "how it works" and a "for partners" block showing the two lines of code a partner pastes.
 - Artwork is loaded from public Good Works addresses. Prices are never typed on the page; the widget reads them from the title.
 
@@ -34,13 +35,14 @@ The loader draws the card and the purchase window inside a frame from goodworksh
 - A public repository under the WeVidIt organization, with GitHub Pages serving the `main` branch from the root. The empty `.nojekyll` file tells Pages to serve the files exactly as they are.
 - In the Good Works admin, staff add a partner with one site address. The address is the origin only, `https://wevidit.github.io`, because a widget's allowed list matches the origin and not the page path.
 - Staff then make one widget per title on that partner with Buy and Rent ticked, and paste the widget's tag into `index.html`. The widget is made off and turned on once the page carries its code.
-- The widget's title picker lists whole films only, so a single episode cannot be chosen there yet. That is why the page carries one film.
+- The widget's title picker lists films first, then each series with its episodes in season and episode order, so a widget can sell one episode. The second card on this page is one.
 
 ## Known limits
 
 - Apple Pay needs a domain file at the root of the web address. This project site lives under a path on wevidit.github.io, so it cannot host that file, and Apple Pay is not set up here. Card payment works.
 - The page only controls where the widget sits. The title's own rules (hidden, archived, area, sale day) still decide whether a purchase can start.
 - No Limbs No Limits has renting switched off, so its card offers Buy only.
+- Test purchases use a money-off code that staff keep to themselves. It is never written in this repository.
 
 ## Files
 
