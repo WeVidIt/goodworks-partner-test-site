@@ -403,7 +403,7 @@ h1 {
     height: 100%;
     aspect-ratio: auto;
     min-height: 292px;
-    object-position: 60% 50%;
+    object-position: 100% 50%;
   }
 
   .film-body {
